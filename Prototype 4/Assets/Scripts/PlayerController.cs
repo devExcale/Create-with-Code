@@ -1,6 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody _rigidbody;
     private GameObject _focalPoint;
-    
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
@@ -22,4 +23,5 @@ public class PlayerController : MonoBehaviour
         float forwardInput = Input.GetAxis("Vertical");
         _rigidbody.AddForce(forwardInput * speed * _focalPoint.transform.forward);
     }
+
 }

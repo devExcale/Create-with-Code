@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b46ba5b888945499201f9631f9825ff, type: 3}
+  m_Name: Powerup Smash
+  m_EditorClassIdentifier: 
+  duration: 5
+  indicatorPrefab: {fileID: 1070871120321254097, guid: efc0342e0f25f1d4eb4c21ea45b681e9,
+    type: 3}
+  jumpImpulse: 6
+  intensity: 30
+  radius: 10

@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Vector3 direction = _player.transform.position - transform.position;
+        direction = new Vector3(direction.x, 0, direction.z);
+        
         _rigidbody.AddForce(speed * direction.normalized);
     }
 }

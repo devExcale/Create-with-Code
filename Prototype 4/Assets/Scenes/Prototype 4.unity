@@ -161,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 7382815964509602841, guid: 3fd5555088952419ebf0eb82e9096fa5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7382815964509602841, guid: 3fd5555088952419ebf0eb82e9096fa5,
         type: 3}
@@ -305,7 +305,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1211419925
 GameObject:
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 1211623976}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -525,6 +525,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Island
       objectReference: {fileID: 0}
+    - target: {fileID: 1301643505922104, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301643505922104, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4625923886776944, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -632,8 +640,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ceea0f0aecbcbd4d81392effdfd0f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 1814818601470145518, guid: daaea650080bc7046bad2c69e9695fe7,
+  enemyPrefabs:
+  - {fileID: 8531357541064525355, guid: bcb0ffd4c03c8d042a41b765111a7a27, type: 3}
+  - {fileID: 1814818601470145518, guid: daaea650080bc7046bad2c69e9695fe7, type: 3}
+  - {fileID: 4345881398185109500, guid: 14316d135dd2dc5469e2b420ed4718d1, type: 3}
+  bossPrefab: {fileID: 2453621935262680667, guid: 3081b6bed9452894d887add46f046987,
     type: 3}
+  powerupPrefabs:
+  - {fileID: 3374111962138872462, guid: fccd115360905a24db7fa3c5f0a7716b, type: 3}
+  - {fileID: 2384322958301824431, guid: 9ad72392c18fd7744a10bd88e2831fef, type: 3}
+  - {fileID: 1888447646986036882, guid: de6141166aab0384795be0ef85388451, type: 3}
   rangeX: {x: -9, y: 9}
   rangeZ: {x: -9, y: 9}
 --- !u!4 &1562880907
@@ -679,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60a06627e9dfe440ab282e063617d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 30
+  rotationSpeed: 50
 --- !u!4 &2043750226
 Transform:
   m_ObjectHideFlags: 0
@@ -705,7 +721,7 @@ PrefabInstance:
     - target: {fileID: 5831814716121893815, guid: 363a8f737719f4d2eafb35f885f3706f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5831814716121893815, guid: 363a8f737719f4d2eafb35f885f3706f,
         type: 3}
